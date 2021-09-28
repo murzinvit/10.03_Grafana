@@ -14,4 +14,4 @@ node_filesystem_free_bytes{instance="192.168.1.46:9100",device="/dev/sda1", fsty
 ![grafana_dashboards](https://github.com/murzinvit/screen/blob/81ca4977bfd5d791e3b5980b521e2164c94136fb/Grafana_dasboard.jpg) </br>
 ### Задание 3: </br>
 Создайте для каждой Dashboard подходящее правило alert: </br>
-![grafana_dashboards]() </br>
+![Grafana_test_notification](https://github.com/murzinvit/screen/blob/e05d7c813c4916da522de995a8633f39d8bf4f5b/Grafana_test_notification.jpg) </br>
