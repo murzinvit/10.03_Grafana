@@ -30,6 +30,6 @@ scrape_configs:
     static_configs:
       - targets: ["node-exporter:9100"]
 
-#  - job_name: "node-exporter-debian"
-#    static_configs:
-#      - targets: ["10.10.1.223:9100"]
+  - job_name: "debian-metrics"
+    static_configs:
+      - targets: ["192.168.1.46:9100"]
