@@ -20,4 +20,5 @@ node_filesystem_free_bytes{instance="10.10.1.223:9100",device="/dev/sda1", fstyp
 ![Grafana_test_notification](https://github.com/murzinvit/screen/blob/83f8bb31b75afd39852f37b80f934fbdf6f06848/Grafana_message_alert.jpg) </br>
 ![Grafana_alert_dasboard_state](https://github.com/murzinvit/screen/blob/c6f21a06f8b4db373c7c8a4ae51759763058da28/Grafana_alert_dasboard_state.jpg) </br>
 ### Задание 4: </br>
-
+Сохраните ваш Dashboard: </br>
+[Custom_dashboard.json](https://github.com/murzinvit/10.03_Grafana/blob/f3647b6662bb7db8e7adeec222a1e11fffb7a9a2/Custom_dashboard.json) </br>
