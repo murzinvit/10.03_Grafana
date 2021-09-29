@@ -3,6 +3,7 @@
 Разверните стек node-exporter->prometheus->grafana. Зайдите в веб-интерфейс графана, используя авторизационные данные, указанные
 в манифесте docker-compose. Решение домашнего задания - скриншот веб-интерфейса grafana со списком подключенных Datasource </br>
 Развернуть стек node-exporter+prometheus+grafana [docker-compose.yml](https://github.com/murzinvit/10.03_Grafana/blob/28ef297f1c8bd89cd8176604de0b8e18a0bc553c/docker-compose.yml) </br>
+Конфиги лежат в папке [configs](https://github.com/murzinvit/10.03_Grafana/tree/main/configs) </br>
 ![grafana_datasource](https://github.com/murzinvit/screen/blob/32d88c2706c477d46736e53e48fcc02a5ace2e6c/Grafana_datasource_1.jpg) </br>
 ### Задание 2: </br>
 Создайте Dashboard и в ней создайте следующие Panels:Утилизация CPU, CPULA 1/5/15, кличество свободной оперативной памяти </br>
