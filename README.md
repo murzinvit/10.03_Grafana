@@ -15,3 +15,5 @@ node_filesystem_free_bytes{instance="10.10.1.223:9100",device="/dev/sda1", fstyp
 ### Задание 3: </br>
 Создайте для каждой Dashboard подходящее правило alert: </br>
 ![Grafana_test_notification](https://github.com/murzinvit/screen/blob/e05d7c813c4916da522de995a8633f39d8bf4f5b/Grafana_test_notification.jpg) </br>
+
+### Задание 4: </br>
