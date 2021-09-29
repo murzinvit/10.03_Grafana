@@ -14,6 +14,9 @@ node_filesystem_free_bytes{instance="10.10.1.223:9100",device="/dev/sda1", fstyp
 ![grafana_dashboards](https://github.com/murzinvit/screen/blob/b7728cd1f21698d2151f61ba44c6659b49e3c745/Grafana_dasboard_1.jpg) </br>
 ### Задание 3: </br>
 Создайте для каждой Dashboard подходящее правило alert: </br>
+Настройка почты [grafana.ini](https://github.com/murzinvit/10.03_Grafana/blob/fc57b016e04897146e78821471defe607559eac4/configs/grafana.ini) </br>
 ![Grafana_test_notification](https://github.com/murzinvit/screen/blob/e05d7c813c4916da522de995a8633f39d8bf4f5b/Grafana_test_notification.jpg) </br>
+Полученное оповещение: </br>
+![Grafana_test_notification](https://github.com/murzinvit/screen/blob/83f8bb31b75afd39852f37b80f934fbdf6f06848/Grafana_message_alert.jpg) </br>
 
 ### Задание 4: </br>
