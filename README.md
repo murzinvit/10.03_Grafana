@@ -18,5 +18,6 @@ node_filesystem_free_bytes{instance="10.10.1.223:9100",device="/dev/sda1", fstyp
 ![Grafana_test_notification](https://github.com/murzinvit/screen/blob/e05d7c813c4916da522de995a8633f39d8bf4f5b/Grafana_test_notification.jpg) </br>
 Полученное оповещение: </br>
 ![Grafana_test_notification](https://github.com/murzinvit/screen/blob/83f8bb31b75afd39852f37b80f934fbdf6f06848/Grafana_message_alert.jpg) </br>
-
+[Grafana_alert_dasboard_state](https://github.com/murzinvit/screen/blob/c6f21a06f8b4db373c7c8a4ae51759763058da28/Grafana_alert_dasboard_state.jpg) </br>
 ### Задание 4: </br>
+
