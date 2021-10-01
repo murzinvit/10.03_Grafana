@@ -20,7 +20,7 @@
 ![Grafana_test_notification](https://github.com/murzinvit/screen/blob/e05d7c813c4916da522de995a8633f39d8bf4f5b/Grafana_test_notification.jpg) </br>
 Полученное оповещение: </br>
 ![Grafana_test_notification](https://github.com/murzinvit/screen/blob/83f8bb31b75afd39852f37b80f934fbdf6f06848/Grafana_message_alert.jpg) </br>
-![Grafana_alert_dasboard_state](https://github.com/murzinvit/screen/blob/c6f21a06f8b4db373c7c8a4ae51759763058da28/Grafana_alert_dasboard_state.jpg) </br>
+![Grafana_alert_dasboard_state](https://github.com/murzinvit/screen/blob/7f891cb3c7e6a178d618cc5cf22975231f8072b1/Grafana_alert_correct.jpg) </br>
 ### Задание 4: </br>
 Сохраните ваш Dashboard: </br>
 [Custom_dashboard.json](https://github.com/murzinvit/10.03_Grafana/blob/f3647b6662bb7db8e7adeec222a1e11fffb7a9a2/Custom_dashboard.json) </br>
