@@ -12,7 +12,7 @@
 `node_load5{instance="node-exporter:9100", job="node-exporter"}` </br>
 `node_load15{instance="node-exporter:9100", job="node-exporter"}` </br>
 `node_memory_MemFree_bytes{instance="node-exporter:9100", job="node-exporter"}` </br>
-`node_filesystem_free_bytes{device="/dev/sda1", fstype="ext4", instance="10.10.1.223:9100", job="debian-metrics", mountpoint="/"}` </br>
+`node_filesystem_free_bytes{device="/dev/sda1", fstype="ext4", instance="node-exporter:9100", job="node-exporter", mountpoint="/mnt"}` </br>
 ![grafana_dashboards](https://github.com/murzinvit/screen/blob/b7728cd1f21698d2151f61ba44c6659b49e3c745/Grafana_dasboard_1.jpg) </br>
 ### Задание 3: </br>
 Создайте для каждой Dashboard подходящее правило alert: </br>
