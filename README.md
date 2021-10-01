@@ -13,7 +13,7 @@
 `node_load15{instance="node-exporter:9100", job="node-exporter"}` </br>
 `node_memory_MemFree_bytes{instance="node-exporter:9100", job="node-exporter"}` </br>
 `node_filesystem_free_bytes{device="/dev/sda1", fstype="ext4", instance="node-exporter:9100", job="node-exporter", mountpoint="/mnt"}` </br>
-![grafana_dashboards](https://github.com/murzinvit/screen/blob/b7728cd1f21698d2151f61ba44c6659b49e3c745/Grafana_dasboard_1.jpg) </br>
+![grafana_dashboards](https://github.com/murzinvit/screen/blob/99448180f6155403a4a0bbaaeaa3e8c32ebe0cc8/Grafana_dashboard_correct.jpg) </br>
 ### Задание 3: </br>
 Создайте для каждой Dashboard подходящее правило alert: </br>
 Настройка почты [grafana.ini](https://github.com/murzinvit/10.03_Grafana/blob/fc57b016e04897146e78821471defe607559eac4/configs/grafana.ini) </br>
