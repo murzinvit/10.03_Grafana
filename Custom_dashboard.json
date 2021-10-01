@@ -21,7 +21,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 2,
   "links": [],
   "panels": [
     {
@@ -75,7 +75,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
-            "drawStyle": "line",
+            "drawStyle": "bars",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -84,6 +84,9 @@
               "viz": false
             },
             "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
             "lineWidth": 1,
             "pointSize": 5,
             "scaleDistribution": {
@@ -112,7 +115,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percentunit"
         },
         "overrides": []
       },
@@ -136,7 +140,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_load1{}",
+          "expr": "node_load1{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -164,7 +168,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
-            "drawStyle": "line",
+            "drawStyle": "bars",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -225,7 +229,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_load5{}",
+          "expr": "node_load5{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -245,7 +249,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
-            "drawStyle": "line",
+            "drawStyle": "bars",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -306,7 +310,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_load15{}",
+          "expr": "node_load15{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -326,7 +330,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
-            "drawStyle": "line",
+            "drawStyle": "bars",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -365,7 +369,32 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "node_memory_MemFree_bytes{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 6,
@@ -387,7 +416,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_memory_MemFree_bytes{} ",
+          "expr": "node_memory_MemFree_bytes{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -407,7 +436,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
-            "drawStyle": "line",
+            "drawStyle": "bars",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -416,6 +445,9 @@
               "viz": false
             },
             "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
             "lineWidth": 1,
             "pointSize": 5,
             "scaleDistribution": {
@@ -444,7 +476,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": [
           {
@@ -503,6 +536,7 @@
       "type": "timeseries"
     }
   ],
+  "refresh": "1m",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
@@ -517,5 +551,5 @@
   "timezone": "",
   "title": "DB server monitoring",
   "uid": "PVxaj_H7z",
-  "version": 9
+  "version": 3
 }
