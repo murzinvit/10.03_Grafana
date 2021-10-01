@@ -23,4 +23,4 @@
 ![Grafana_alert_dasboard_state](https://github.com/murzinvit/screen/blob/7f891cb3c7e6a178d618cc5cf22975231f8072b1/Grafana_alert_correct.jpg) </br>
 ### Задание 4: </br>
 Сохраните ваш Dashboard: </br>
-[Custom_dashboard.json](https://github.com/murzinvit/10.03_Grafana/blob/f3647b6662bb7db8e7adeec222a1e11fffb7a9a2/Custom_dashboard.json) </br>
+[Custom_dashboard.json](https://github.com/murzinvit/10.03_Grafana/blob/910d103aaf16a340362acd418409d6b6d5d3453c/Custom_dashboard.json) </br>
