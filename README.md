@@ -8,12 +8,12 @@
 ### Задание 2: </br>
 Создайте Dashboard и в ней создайте следующие Panels:Утилизация CPU, CPULA 1/5/15, кличество свободной оперативной памяти </br>
 Количество места на файловой системе: </br>
-`node_load1{instance="node-exporter:9100", job="node-exporter"}` </br>
-`node_load5{instance="node-exporter:9100", job="node-exporter"}` </br>
-`node_load15{instance="node-exporter:9100", job="node-exporter"}` </br>
-`node_memory_MemFree_bytes{instance="node-exporter:9100", job="node-exporter"}` </br>
-`node_filesystem_free_bytes{device="/dev/sda1", fstype="ext4", instance="node-exporter:9100", job="node-exporter", mountpoint="/mnt"}` </br>
-![grafana_dashboards](https://github.com/murzinvit/screen/blob/99448180f6155403a4a0bbaaeaa3e8c32ebe0cc8/Grafana_dashboard_correct.jpg) </br>
+`node_load1` </br>
+`node_load5 * 100` </br>
+`node_load15 * 100` </br>
+`(node_memory_MemFree_bytes / node_memory_MemTotal_bytes) * 100` </br>
+`node_filesystem_free_bytes / 1000000000` </br>
+![grafana_dashboards](https://github.com/murzinvit/screen/blob/e85c3544cf202c3e445e6b0c54db454cd55cb595/Grafana_dashboard_screen.png) </br>
 ### Задание 3: </br>
 Создайте для каждой Dashboard подходящее правило alert: </br>
 Настройка почты [grafana.ini](https://github.com/murzinvit/10.03_Grafana/blob/fc57b016e04897146e78821471defe607559eac4/configs/grafana.ini) </br>
