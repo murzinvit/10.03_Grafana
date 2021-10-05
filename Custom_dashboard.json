@@ -21,7 +21,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 1,
   "links": [],
   "panels": [
     {
@@ -118,7 +118,32 @@
           },
           "unit": "percentunit"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "node_load1{instance=\"192.168.43.71:9100\", job=\"debian-metrics\"}"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 6,
@@ -127,6 +152,7 @@
         "y": 0
       },
       "id": 2,
+      "interval": "1",
       "options": {
         "legend": {
           "calcs": [],
@@ -140,7 +166,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_load1{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
+          "expr": "node_load1",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -205,9 +231,35 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "{instance=\"192.168.43.71:9100\", job=\"debian-metrics\"}"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 6,
@@ -229,7 +281,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_load5{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
+          "expr": "node_load5 * 100",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -286,9 +338,35 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "{instance=\"192.168.43.71:9100\", job=\"debian-metrics\"}"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 6,
@@ -310,7 +388,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_load15{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
+          "expr": "node_load15 * 100",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -367,7 +445,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": [
           {
@@ -377,7 +456,7 @@
               "options": {
                 "mode": "exclude",
                 "names": [
-                  "node_memory_MemFree_bytes{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}"
+                  "{instance=\"192.168.43.71:9100\", job=\"debian-metrics\"}"
                 ],
                 "prefix": "All except:",
                 "readOnly": true
@@ -416,7 +495,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_memory_MemFree_bytes{instance=\"10.10.1.223:9100\", job=\"debian-metrics\"}",
+          "expr": "(node_memory_MemFree_bytes / node_memory_MemTotal_bytes) * 100",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -487,7 +566,7 @@
               "options": {
                 "mode": "exclude",
                 "names": [
-                  "node_filesystem_free_bytes{device=\"/dev/sda1\", fstype=\"ext4\", instance=\"10.10.1.223:9100\", job=\"debian-metrics\", mountpoint=\"/\"}"
+                  "{device=\"/dev/sda1\", fstype=\"ext4\", instance=\"192.168.43.71:9100\", job=\"debian-metrics\", mountpoint=\"/\"}"
                 ],
                 "prefix": "All except:",
                 "readOnly": true
@@ -526,7 +605,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_filesystem_free_bytes{device=\"/dev/sda1\", fstype=\"ext4\", instance=\"10.10.1.223:9100\", job=\"debian-metrics\", mountpoint=\"/\"}",
+          "expr": "node_filesystem_free_bytes / 1000000000",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
