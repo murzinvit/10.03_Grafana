@@ -12,7 +12,7 @@
 `node_load5 * 100` </br>
 `node_load15 * 100` </br>
 `(node_memory_MemFree_bytes / node_memory_MemTotal_bytes) * 100` </br>
-`node_filesystem_free_bytes / 1000000000` </br>
+`node_filesystem_avail_bytes / node_filesystem_size_bytes * 100` </br>
 ![grafana_dashboards](https://github.com/murzinvit/screen/blob/e85c3544cf202c3e445e6b0c54db454cd55cb595/Grafana_dashboard_screen.png) </br>
 ### Задание 3: </br>
 Создайте для каждой Dashboard подходящее правило alert: </br>
