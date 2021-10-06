@@ -605,7 +605,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "node_filesystem_free_bytes / 1000000000",
+          "expr": "node_filesystem_avail_bytes / node_filesystem_size_bytes * 100",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -630,5 +630,5 @@
   "timezone": "",
   "title": "DB server monitoring",
   "uid": "PVxaj_H7z",
-  "version": 3
+  "version": 2
 }
